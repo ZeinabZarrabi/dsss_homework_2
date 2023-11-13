@@ -23,7 +23,6 @@ def perform_operation(num1, num2, operator):
     problem = f"{num1} {operator} {num2}"
     return problem, result
 
-
 """Main function to run the Math Quiz game """
 def math_quiz():
     score = 0
