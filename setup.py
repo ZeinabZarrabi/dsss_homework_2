@@ -7,5 +7,4 @@ setup(
     author="Zeinab Zarrabi",
     author_email='zeinab.zarrabi@fau.de',
     packages=find_packages(),
-    install_requires=["random"]
 )
