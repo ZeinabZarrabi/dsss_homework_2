@@ -1,4 +1,4 @@
-import math_quiz
+from . import math_quiz
 
 math_quiz.math_quiz.main()
 
