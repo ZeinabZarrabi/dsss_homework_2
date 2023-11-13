@@ -1,23 +1,23 @@
 import random
 
 
-def generate_random_integer(minimum, maximum):
+def generate_rand_int(minimum, maximum):
     """
-    Generate a random integer between the given minimum and maximum values.
+    Generate a random integer between the min and max.
     """
     return random.randint(minimum, maximum)
 
 
-def generate_random_operator():
+def generate_rand_operator():
     """
-    Generate a random arithmetic operator: '+', '-', or '*'.
+    Generate a random operator: '+', '-', or '*'.
     """
     return random.choice(['+', '-', '*'])
 
 
-def perform_operation(num1, num2, operator):
+def operation(num1, num2, operator):
     """
-    Perform the arithmetic operation based on the given operator and return the problem and the correct answer.
+    Perform the operation based on the given operator and return the answer.
     """
     if operator == '+':
         result = num1 + num2
@@ -41,11 +41,11 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(total_questions):
-        num1 = generate_random_integer(1, 10)
-        num2 = generate_random_integer(1, 5)
-        operator = generate_random_operator()
+        num1 = generate_rand_int(1, 10)
+        num2 = generate_rand_int(1, 5)
+        operator = generate_rand_operator()
 
-        problem, answer = perform_operation(num1, num2, operator)
+        problem, answer = operation(num1, num2, operator)
 
         print(f"\nQuestion: {problem}")
         try:
